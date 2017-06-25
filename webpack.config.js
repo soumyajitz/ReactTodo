@@ -24,7 +24,8 @@ module.exports = {
     root: __dirname,
     modulesDirectories: [
       'node_modules',
-      './app/components'
+      './app/components',
+      './app/api'
     ],
     alias: {
       applicationStyles: 'foundation-sites/dist/css/foundation.min.css'
