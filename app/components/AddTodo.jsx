@@ -1,7 +1,7 @@
 var React = require('react');
 
 var AddTodo = React.createClass({
-    handleSunmit: function(e) {
+    handleSubmit: function(e) {
         e.preventDefault();
         var todoText = this.refs.todoText.value;
 
@@ -15,7 +15,7 @@ var AddTodo = React.createClass({
     render: function() {
         return (
             <div>
-                <form onSubmit={this.handleSunmit}>
+                <form onSubmit={this.handleSubmit}>
                     <input type="text" ref="todoText" placeholder="Add Todo Item" />
                     <button className="button expanded">Add Todo Item</button>
                 </form>
