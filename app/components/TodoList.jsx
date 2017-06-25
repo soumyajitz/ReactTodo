@@ -8,7 +8,7 @@ var TodoList = React.createClass({
             return todos.map((todo) => {
                 // spread operator
                 return (
-                    <Todo key={todo.id} {...todo}/>
+                    <Todo key={todo.id} {...todo} onToggle={this.props.onToggle}/>
                 )
             })
         };
