@@ -75,7 +75,7 @@ describe('TodoApi', () => {
                 expect(filteredTodos.length).toBe(3);
             });
 
-             it('should return all items if showCompleted is false', () => {
+            it('should return all items if showCompleted is false', () => {
                 var filteredTodos = TodoApi.filterTodos(todos, false, '');
                 expect(filteredTodos.length).toBe(1);
             });
@@ -90,7 +90,7 @@ describe('TodoApi', () => {
                 expect(filteredTodos.length).toBe(2);
             });
 
-             it('should return all todos if search text is empty', () => {
+            it('should return all todos if search text is empty', () => {
                 var filteredTodos = TodoApi.filterTodos(todos, true, '');
                 expect(filteredTodos.length).toBe(3);
             });
